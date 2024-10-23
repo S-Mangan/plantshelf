@@ -1,8 +1,3 @@
-# HTML notes:
-* `<a href="..." target="_blank"></a>`
-
-___
-
 # 🌿PlantShelf  
 PlantShelf is a webpage which shows image/information cards for different plants. You can [see the full version (with the card flip extension) running here](https://s-mangan.github.io/plantshelf/).  
 
@@ -75,5 +70,9 @@ Modify the HTML and refresh your browser to see how the website changes:
 * Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)
 
 * #### Visual Studio Code │ Live Server extension
+* Search and install the Live Server extension (View > Open View... Extensions).  
+* Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)
+
+#### Web Browser │ Developer Tools
 * Search and install the Live Server extension (View > Open View... Extensions).  
 * Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)  
