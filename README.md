@@ -1,3 +1,8 @@
+# HTML notes:
+* `<a href="..." target="_blank"></a>`
+
+___
+
 # 🌿PlantShelf  
 PlantShelf is a webpage which shows image/information cards for different plants. You can [see the full version (with the card flip extension) running here](https://s-mangan.github.io/plantshelf/).  
 
@@ -31,7 +36,7 @@ GitHub is a website which stores files—all their past versions. The files for 
 ### Visual Studio Code | Making a local copy
 The fork you created is a *remote* copy of the original repository. *Remote* means that it doesn't live on your computer---in this case it lives on GitHub's servers.
 
-It will be easier to make changes to the website if you have a *local* copy on Windows. For now, we'll just manually download the code - we'll learn a better way later.
+It will be easier to make changes to the website if you have a *local* copy on Windows. For now, we'll just manually download the code—we'll learn a better way later.
 
 - [ ] Download a zip of your fork and save it in your home folder  
 ![Screenshot of downloading a zip](/documentation/download.png "Screenshot of downloading a zip")   
@@ -42,7 +47,7 @@ It will be easier to make changes to the website if you have a *local* copy on W
 
 ### Visual Studio Code | Modifying the HTML  
 Find the index.html file in the tree folder (View > Open View... Folders), and then:
-   - [ ] Click and drag the index.html a browser window to see PlantShelf website. Try hovering over the cards---they should change colour. Note that in this version, the cards don't flip.  
+   - [ ] Click and drag the index.html into a browser window to see PlantShelf website. Try hovering over the cards—they should change colour. Note that in this version, the cards don't flip.  
    - [ ] Double click index.html to see the HTML. Notice that the content has 3 main sections:  the header, the main content, and the footer.
 
 Modify the HTML and refresh your browser to see how the website changes:  
@@ -52,7 +57,7 @@ Modify the HTML and refresh your browser to see how the website changes:
 
 <br/><br/><br/><br/>
 
-## **⯈Part B** git and CSS
+## **⯈Part B** git (via GitHub desktop) and CSS
 - [ ] CSS variables  
 - [ ] Responsive typography and the rem unit  
 - [ ] flex layouts: flex-direction (column vs row)   
