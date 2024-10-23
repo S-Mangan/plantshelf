@@ -78,6 +78,7 @@ A common trick to make a variable accessible *everywhere* is to declare it insid
 ##### ✅ Activity   
 - [ ] Change the colours assigned to the variables inside the `:root` selector in `style.css`
 
+<br/>
 
 #### Relative units and responsive typography
 As well as the page colours, the `:root` selector declares variables for the width and height of the cards:
@@ -100,16 +101,50 @@ html {
 ```
 
 The `clamp` function says "make `font-size` `1.6 x <the window width>`" — but no less than `10px` and no more than `16px`. The result is that everything on the page scales based on the window size, so the website also looks sensible on a phone screen:
+![Screenshot of PlantShelf on a phonescreen](/documentation/phone.png "Screenshot of PlantShelf on a phonescreen")   
 
+##### ✅ Activity   
+- [ ] Modify the arguments of the `clamp` function in style.css to change minimum and maximum scale of the page. Resize your browser window to test it out.
 
-#### flex layouts: flex-direction (column vs row)   
+<br/>
 
-#### grid layouts: gap, grid-template-columns  
+#### flex and grid layouts
+You may have used the `display` property before to make elements either stack on top of each other (`display: block`) or sit next to each other (`display: inline`).
 
-#### pseudo classes and transitions  
+Two other common `display` values are `flex` and `grid`, which are recent inventions intended to make laying out pages easier. There is a lot to say about both, but a very brief summary is:  
 
-### git
-TODO
+* if an element has `display: flex` set, its elements will grow and shrink based on the available space. For example, these rules mean that the `header`, `main`, and `footer` elements are stacked in a column fills the entire screen height. The `main` element expands to make sure this happens:
+    ```
+    body {
+      display: flex;
+      ...
+      flex-direction: column;
+      min-height: 100vh;
+      ...
+
+      main {
+        flex: 1;
+      }
+    }
+    ```
+
+* if an element has `display: grid` set, its elements will be arranged in rows and colums. For example, these rules mean that the cards will be arranged in a grid with `1rem` of space between rows and columns, and with the number of columns depending on how much room there is:
+    ```
+    .container {
+      ....
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+      gap: 1rem;
+    }
+    ```
+
+ flex-direction (column vs row)   
+
+##### ✅ Activity   
+- [ ] Change `flex-direction: column;` to `flex-direction: row;`, and explain what happens as a result.  
+- [ ] Double the size of the grid `gap`.
+
+<br/><br/>
 
 ## [optional] Card flipping extension
 * In  index.html, uncomment all the `<div class="back side">` sections.  
@@ -122,5 +157,8 @@ TODO
 * Search and install the Live Server extension (View > Open View... Extensions).  
 * Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)
 
+#### Free games for learning flex and grid layouts
+If you're interested in learning more about `flex` and `grid` layouts, [Flex Box Froggy](https://flexboxfroggy.com/) and [CSS Grid Garden](https://cssgridgarden.com/) are well-known free games for doing so.
+
 #### Web Browser │ Developer Tools
-* (if time allows) TODO using (Chrome?) devtools to debug html/css
+* (TBA: if time allows) Using (Chrome?) devtools to debug html/css
