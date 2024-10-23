@@ -29,7 +29,7 @@ GitHub is a website which stores files—all their past versions. The files for 
 - [ ] Now check that see your change in the README on the main page of your fork.
 
 ### Visual Studio Code | Making a local copy
-The fork you created is a *remote* copy of the original repository. *Remote* means that it doesn't live on your computer---in this case it lives on GitHub's servers.
+The fork you created is a *remote* copy of the original repository. *Remote* means that it doesn't live on your computer—in this case it lives on GitHub's servers.
 
 It will be easier to make changes to the website if you have a *local* copy on Windows. For now, we'll just manually download the code—we'll learn a better way later.
 
@@ -100,7 +100,7 @@ html {
 }
 ```
 
-The `clamp` function says "make `font-size` `1.6 x <the window width>`" — but no less than `10px` and no more than `16px`. The result is that everything on the page scales based on the window size, so the website also looks sensible on a phone screen:
+The `clamp` function says "make `font-size` `1.6 x <the window width>`" — but no less than `10px` and no more than `16px`. The result is that everything on the page scales based on the window size, so the website also looks sensible on a phone screen:  
 ![Screenshot of PlantShelf on a phonescreen](/documentation/phone.png "Screenshot of PlantShelf on a phonescreen")   
 
 ##### ✅ Activity   
