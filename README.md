@@ -66,13 +66,9 @@ Modify the HTML and refresh your browser to see how the website changes:
 * Investigate the TODOs in `flip_extension.css` and try to make the cards flip.  
 
 ## [optional] Further information and useful tools
-#### Visual Studio Code │ Live Server extensio  * Search and install the Live Server extension (View > Open View... Extensions).  
-* Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)
-
-* #### Visual Studio Code │ Live Server extension
+#### Visual Studio Code │ Live Server extension
 * Search and install the Live Server extension (View > Open View... Extensions).  
 * Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)
 
 #### Web Browser │ Developer Tools
-* Search and install the Live Server extension (View > Open View... Extensions).  
-* Inside your index.html, right click and select "Open with Live Server". A new browser tab should open with your page, and will automatically reload whenever you save a change to the html or css (so you no longer have to refresh!)  
+* (if time allows) TODO using (Chrome?) devtools to debug html/css
