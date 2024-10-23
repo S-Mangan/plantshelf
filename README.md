@@ -8,10 +8,10 @@ In these 2 lessons, you will:
 ![Plant image cards on the PlantShelf webpage](/documentation/plantshelf.png "Plant image cards (left), and the image cards again with one flipped to show the back (right)")   
 *LEFT: Plant image cards*  
 *RIGHT: Plant image cards, with one flipped to show the back*
+___
+<br/>
 
-<br/><br/><br/><br/>
-
-## **⯈Part A** GitHub and HTML
+## **⯈Part A** GitHub and HTML
 ### GitHub │ Forking a repository
 GitHub is a website which stores files—all their past versions. The files for the PlantShelf webpage (including this README!) are stored in a folder (or *repository*) on GitHub. Your first step is to make your own copy (or *fork*) of this folder on GitHub.
 
@@ -50,14 +50,44 @@ Modify the HTML and refresh your browser to see how the website changes:
    - [ ] Replace some of the card images (see the images folder), and update the card headings to match.  
    - [ ] Change the main website heading
 
-<br/><br/><br/><br/>
+<br/>
 
-## **⯈Part B** git (via GitHub desktop) and CSS
-- [ ] CSS variables  
-- [ ] Responsive typography and the rem unit  
-- [ ] flex layouts: flex-direction (column vs row)   
-- [ ] grid layouts: gap, grid-template-columns  
-- [ ] psuedo classes and transitions  
+## **⯈Part B** CSS and git (via GitHub desktop)  
+### CSS
+
+#### Variables  
+Variables (a.k.a. *custom properties*) can be used in CSS to store and use values:
+```
+nav {
+  --accent-color: gold;
+  color: var(--accent-color);
+}
+```
+
+A variable must be declared inside a rule (i.e. inside a `<selector> { ... }` block). Variables can be accessed inside the rule where they're created (like above), and they "cascade" just like normal properties. For example, `nav button` can also access `--accent-color`:
+
+```
+nav button {
+  border: 2px solid var(--accent-color);
+}
+```
+
+A common trick to make a variable accessible *everywhere* is to declare it inside the "fake" `:root` selector.
+
+##### ✅ Activity   
+- [ ] Change the colours assigned to the variables inside the `:root` selector in `style.css`
+
+
+#### Responsive typography and the rem unit  
+
+#### flex layouts: flex-direction (column vs row)   
+
+#### grid layouts: gap, grid-template-columns  
+
+#### pseudo classes and transitions  
+
+### git
+TODO
 
 ## [optional] Card flipping extension
 * In  index.html, uncomment all the `<div class="back side">` sections.  
