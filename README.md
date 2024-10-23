@@ -54,6 +54,7 @@ Modify the HTML and refresh your browser to see how the website changes:
 
 ## **⯈Part B** CSS and git (via GitHub desktop)  
 ### CSS
+The main stylesheet, style.css, contains a few bits and pieces that may be new to you. None of these are vital to remember for the SE course, but they will make it easier to make interesting looking websites while keeping your CSS neat and easy to read.
 
 #### Variables  
 Variables (a.k.a. *custom properties*) can be used in CSS to store and use values:
@@ -78,7 +79,28 @@ A common trick to make a variable accessible *everywhere* is to declare it insid
 - [ ] Change the colours assigned to the variables inside the `:root` selector in `style.css`
 
 
-#### Responsive typography and the rem unit  
+#### Relative units and responsive typography
+As well as the page colours, the `:root` selector declares variables for the width and height of the cards:
+```
+:root {
+  ...
+  --card-width: 11rem;
+  --card-height: 16rem;
+}
+```
+Unlike pixels (`px`), which sets an exact size, a `rem` is a *relative* unit. Specifically, `11rem` means `11 x <whatever the root element's font-size is>`, a.k.a. `11 x <the html element's font-size>`.  
+
+If you look at the rest of the style.css, you'll see that exact sizes aren't used at all. This means that if we want to scale everything on the page, all we have to do is change one value: the html element's `font-size`.
+
+So what is the html element's `font-size`? It depends how big the window is:
+```
+html {
+  font-size: clamp(10px, 1.6vw, 16px);
+}
+```
+
+The `clamp` function says "make `font-size` `1.6 x <the window width>`" — but no less than `10px` and no more than `16px`. The result is that everything on the page scales based on the window size, so the website also looks sensible on a phone screen:
+
 
 #### flex layouts: flex-direction (column vs row)   
 
