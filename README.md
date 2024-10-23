@@ -52,9 +52,43 @@ Modify the HTML and refresh your browser to see how the website changes:
 
 <br/>
 
+
+
+
+
+
+
 ## **⯈Part B** CSS and git (via GitHub desktop)  
 ### CSS
 The main stylesheet, style.css, contains a few bits and pieces that may be new to you. None of these are vital to remember for the SE course, but they will make it easier to make interesting looking websites while keeping your CSS neat and easy to read.
+
+
+
+#### Nesting
+CSS rules can be nested to reduce repetition. For example, this:
+```
+header h1 {
+  ...
+}
+header nav {
+  ...
+}
+```
+
+...can be rewritten as this:
+```
+header {
+  h1 {
+    ...
+  }
+
+  nav {
+    ...
+  }
+}
+```
+
+<br/>
 
 #### Variables  
 Variables (a.k.a. *custom properties*) can be used in CSS to store and use values:
