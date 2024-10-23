@@ -15,7 +15,7 @@ In these 2 lessons, you will:
 ### GitHub │ Forking a repository
 GitHub is a website which stores files—all their past versions. The files for the PlantShelf webpage (including this README!) are stored in a folder (or *repository*) on GitHub. Your first step is to make your own copy (or *fork*) of this folder on GitHub.
 
-- [ ] Go to [GitHub.com](https://github.com/signup) and create a free account (or login if you already have one).  
+- [x] Go to [GitHub.com](https://github.com/signup) and create a free account (or login if you already have one).  
 ![Screenshot of signup](/documentation/github_signup.png "Screenshot of signup")
 
 - [ ] Go to [the PlantShelf repository](https://github.com/S-Mangan/plantshelf), click Fork, and accept all the defaults.  
